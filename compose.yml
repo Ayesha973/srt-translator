@@ -1,0 +1,9 @@
+services:
+  transformers-notebook:
+    build: ./
+    ports:
+      - 8889:8888
+    environment:
+      - "JUPYTER_TOKEN=iamleo"
+    volumes: 
+      - ./:/home/jovyan
